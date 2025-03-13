@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="back-button" onclick="goBack()">⬅ Back</button>
+    <h1 id="day-title"></h1>
+
+    <div class="container">
+        <div class="body-container">
+            <img src="images/body-diagram.png" id="body-img">
+
+            <!-- Clickable areas -->
+            <div class="click-zone traps" data-muscle="Traps"></div>
+            <div class="click-zone chest" data-muscle="Chest"></div>
+            <div class="click-zone shoulders" data-muscle="Shoulders"></div>
+            <div class="click-zone triceps" data-muscle="Triceps"></div>
+            <div class="click-zone biceps" data-muscle="Biceps"></div>
+            <div class="click-zone lats" data-muscle="Lats"></div>
+            <div class="click-zone abs" data-muscle="Abs"></div>
+            <div class="click-zone glutes" data-muscle="Glutes"></div>
+            <div class="click-zone quads" data-muscle="Quads"></div>
+            <div class="click-zone hamstrings" data-muscle="Hamstrings"></div>
+            <div class="click-zone calves" data-muscle="Calves"></div>
+        </div>
+
+        <!-- Muscle name and exercises list -->
+        <div class="exercise-panel">
+          
+            <div id="exercise-details"></div>
+            <div id="exercise-icons"></div> 
+            <div class="effort-container">
+                <img id="effort-meter" src="" alt="Effort Meter" style="display: none;">
+                <p id="effort-note"></p>
+            </div>
+             <h2 id="muscle-name">Tap a Muscle</h2>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>

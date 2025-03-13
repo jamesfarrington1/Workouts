@@ -1,0 +1,283 @@
+html {
+    background: linear-gradient(to bottom, #ffffff, #522bef);
+    background-size: auto 120%;
+    font-family: monospace;
+}
+
+/* Remove duplicate .calendar-strip and fix structure */
+.calendar-strip {
+    display: flex;
+    flex-direction: column; /* Stack days vertically */
+    align-items: center; /* Keep them centered */
+    gap: 5px;
+    margin-top: 40px;
+    color:#1e0097;
+}
+
+h1 {
+    font-size: 32px;
+    color: #1e0097;
+    line-height: 94%;
+    margin-bottom: 10px;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.maintitle {
+    font-size: 32px;
+    color: #1e0097;
+    line-height: 94%;
+    margin-bottom: 10px;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.day {
+    width: 50px; /* Make them square */
+    color: #1e0097;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #ffffff, #4f3bff);
+    background-size: auto 200%;
+    color: black;
+    border-radius: 4px;
+    border: 2px solid #3f56a4;
+}
+
+.day:hover {
+    background: linear-gradient(to bottom, #a49aff, #4f3bff);
+    color: white;
+    border-color: white;
+}
+
+#back-button {
+    font-family: monospace;
+    display: flex; 
+    align-items: left;
+    justify-content: left; 
+    margin-left: 8%;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #4f3bff);
+    background-size: auto 200%;
+    color: #1e0097;
+    border-radius: 4px;
+    border: 2px solid #3f56a4;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+#back-button:hover {
+    background: linear-gradient(to bottom, #a49aff, #4f3bff);
+    color: white;
+    border-color: white;
+}
+
+#body-img {
+    display: block !important;
+    visibility: visible !important;
+    max-width: 30%;
+    height: auto;
+    margin-left: 16px;
+}
+
+
+
+
+.click-zone {
+    position: absolute;
+    border: 1px solid red;
+    opacity: 0.4;
+    cursor: pointer; /* Allow clicking */
+    pointer-events: auto; /* Enable interaction */
+}
+
+
+
+.traps {
+    background: rgba(255, 0, 170, 0.3); /* Semi-transparent red */
+    left: 30px;
+    top: 160px;
+    width: 30px;
+    height: 40px;
+}
+.chest {
+    background: rgba(0, 145, 255, 0.3); /* Semi-transparent red */
+    left: 70px;
+    top: 190px;
+    width: 30px;
+    height: 52px;
+}
+.shoulders {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 30px;
+    top: 200px;
+    width: 35px;
+    height: 38px;
+}
+.triceps {
+    background: rgba(13, 255, 0, 0.3); /* Semi-transparent red */
+    left: 38px;
+    top: 248px;
+    width: 21px;
+    height: 40px;
+    rotate: -20deg;
+}
+.biceps {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 58px;
+    top: 238px;
+    width: 10px;
+    height: 40px;
+    rotate: -15deg;
+}
+.lats {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 15px;
+    top: 200px;
+    width: 18px;
+    height: 70px;
+}
+.abs {
+    background: rgba(0, 255, 255, 0.3); /* Semi-transparent red */
+    left: 75px;
+    top: 244px;
+    width: 30px;
+    height: 80px;
+}
+.glutes {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 30px;
+    top: 310px;
+    width: 30px;
+    height: 54px;
+}
+.quads {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 60px;
+    top: 345px;
+    width: 30px;
+    height: 90px;
+    rotate: 15deg;
+}
+.hamstrings {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 30px;
+    top: 370px;
+    width: 24px;
+    height: 70px;
+    rotate: 0deg;
+}
+.calves {
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    left: 20px;
+    top: 450px;
+    width: 30px;
+    height: 70px;
+    rotate: 0deg;
+}
+
+#exercise-details {
+    font-size: smaller;
+    color:#1e0097;
+    position: absolute;
+    text-align: center;
+    left: 115px; /* Adjust based on body diagram position */
+    top: 120px;
+    width: 140px;
+    background: linear-gradient(to bottom, #ffffff, #9482db);
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color:#1e0097;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-icon {
+    display: block;
+    padding: 5px;
+    margin: 5px 0;
+    background-color:  #1e00971e;
+    border-radius: 5px;
+}
+
+.icon-item {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, #ffffff54, #5e46bd67);
+    border-color: #1e00974d;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    left: 175px;
+    top:340px;
+}
+#muscle-name {
+    background: linear-gradient(to bottom, #ffffff54, #5e46bd67);
+    border-color:#ffffff8b;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 2px 1px #1e0097;
+    font-family: monospace;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: auto 50px;
+    margin-top: 12px;
+    text-align: center;
+}
+.effort-container {
+    
+}
+#effort-meter {
+    width: 100px;
+    position: absolute;
+    left: 145px;
+    top: 340px;
+}
+#effort-note {
+    color:#1e0097;
+    text-align: center;
+    position: absolute;
+    left: 128px;
+    top: 400px;
+    width: 120px;
+    padding: 5px;
+    margin-top: 10px;
+    background: linear-gradient(to bottom, #ffffff54, #5e46bd67);
+    border-color:#1e0097;
+    border-style:groove;
+    border-width: 2px;
+    border-radius: 4px;
+}
+.collophon {
+    font-size:8px;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 2px 1px #1e0097;
+    font-family: monospace;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: auto 20px;
+    margin-top: 24px;
+    text-align: center;
+}
