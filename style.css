@@ -7,6 +7,9 @@
     height: 100%;
     transform: scale(1.2); /* Adjust this value as needed */
     transform-origin: top left; /* Keep alignment */
+
+        z-index: 1 !important;
+    
 }
 
 
@@ -79,6 +82,13 @@ h1 {
 }
 
 #back-button {
+  
+    position: relative;
+    top: 8px;
+    left: 10px;
+
+    pointer-events: auto;
+
     font-family: monospace;
     display: flex; 
     align-items: left;
@@ -92,7 +102,9 @@ h1 {
     border: 2px solid #3f56a4;
     padding: 5px 10px;
     cursor: pointer;
-    margin-top: 10%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    z-index: 9999 !important;
 }
 #back-button:hover {
     background: linear-gradient(to bottom, #a49aff, #4f3bff);
@@ -270,9 +282,6 @@ h1 {
     margin: auto 50px;
     margin-top: 12px;
     text-align: center;
-}
-.effort-container {
-    
 }
 #effort-meter {
     width: 100px;

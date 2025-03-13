@@ -1,15 +1,39 @@
+window.onload = function () {
+    const backButton = document.getElementById("back-button");
 
-
+    if (backButton) {
+        console.log("Back button found.");
+        backButton.addEventListener("click", function () {
+            console.log("Back button clicked!");
+            goBack();
+        });
+    } else {
+        console.error("Back button NOT found in DOM!");
+    }
+};
 
 function goToDay(day) {
+    console.log(`Navigating to ${day}.html`);
     window.location.href = `day.html?day=${day}`;
 }
 
 function goBack() {
-    window.location.href = "index.html";
+    console.log("Forcing navigation to index.html...");
+    window.location.href = "index.html"; // Change this if index.html is in a subfolder
 }
-
 window.onload = function () {
+    console.log("Page loaded successfully.");
+
+    // Ensure back button works
+    const backButton = document.getElementById("back-button");
+    if (backButton) {
+        console.log("Back button found.");
+        backButton.addEventListener("click", goBack);
+    } else {
+        console.error("Back button NOT found!");
+    }
+
+    // Get selected day from URL
     const params = new URLSearchParams(window.location.search);
     const day = params.get("day");
 
@@ -47,11 +71,9 @@ function showDetails(muscle) {
     const titleText = document.getElementById("day-title").textContent;
     const selectedDay = titleText.includes(".") ? titleText.split(".")[0].trim() : titleText.trim();
     const exerciseDetails = document.getElementById("exercise-details");
-    const exerciseIcons = document.getElementById("exercise-icons");
 
     // Clear previous content
     exerciseDetails.innerHTML = ""; 
-    exerciseIcons.innerHTML = ""; 
 
     // Create and add the muscle name element
     const muscleHeader = document.createElement("h2");
@@ -65,10 +87,8 @@ function showDetails(muscle) {
         workoutData[selectedDay][muscle].forEach(exercise => {
             const exerciseItem = document.createElement("div");
             exerciseItem.textContent = exercise;
-            exerciseItem.classList.add("exercise-icon"); // You can rename this if needed
+            exerciseItem.classList.add("exercise-icon");
             exerciseDetails.appendChild(exerciseItem);
-
-          
         });
     } else {
         const noExerciseMsg = document.createElement("p");
