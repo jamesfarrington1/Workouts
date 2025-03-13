@@ -9,6 +9,7 @@ const workoutData = {
     "Fri": {
         "Lats": ["Lat Pulldown", "Seated Row", "Shrugs"],
         "Biceps": ["Hammer Curls", "Cable Curls", "Barbell Curls"],
+        "Traps": ["Shrugs"],
         "effortNote": "<b>Effort Note:</b><br><br>Alright pull day. Very hot, though."
     },
     "Sat": {
