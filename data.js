@@ -20,7 +20,8 @@ const workoutData = {
         "effortNote": "<b>Effort Note:</b><br><br>Unusally enjoyable shoulder & leg day. Going to be sore."
     },
     "Sun": {
-        "Rest": []
+        "Rest": [],
+        "effortNote": "<b>Effort Note:</b><br><br>Rest day!"
     },
     "Mon": {
         "Chest": ["Bench Press", "Incline Smith Press", "Dips", "Dumbbell Flies"],
@@ -34,6 +35,7 @@ const workoutData = {
         "effortNote": "<b>Effort Note:</b><br><br>Best pull day I've had in a while."
     },
     "Wed": {
-       "Rest": []
+       "Rest": [],
+       "effortNote": "<b>Effort Note:</b><br><br>Rest day!"
     }
 };
