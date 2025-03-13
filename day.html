@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.3">
+    <meta name="viewport" content="width=device-width, initial-scale:1">
     <title>Workout Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,11 +10,9 @@
     <button id="back-button" onclick="goBack()">⬅ Back</button>
     <h1 id="day-title"></h1>
 
-    <div class="container">
-        <div class="body-container">
-            <img src="images/body-diagram.png" id="body-img">
-
-            <!-- Clickable areas -->
+    <div class="body-container">
+        <img src="images/body-diagram.png" id="body-img">
+        <div class="click-zone-container">
             <div class="click-zone traps" data-muscle="Traps"></div>
             <div class="click-zone chest" data-muscle="Chest"></div>
             <div class="click-zone shoulders" data-muscle="Shoulders"></div>
@@ -27,6 +25,7 @@
             <div class="click-zone hamstrings" data-muscle="Hamstrings"></div>
             <div class="click-zone calves" data-muscle="Calves"></div>
         </div>
+    </div>
 
         <!-- Muscle name and exercises list -->
         <div class="exercise-panel">
