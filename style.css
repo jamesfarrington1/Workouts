@@ -1,4 +1,5 @@
 
+
 .click-zone-container {
     position: absolute;
     top: -8%;
@@ -38,7 +39,22 @@ body {
 }
 
 
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+       
+    }
+}
 
+/* Apply to everything */
+body, .click-zone, #back-button, #day-title, .exercise-panel, #effort-meter, #effort-note , #exercise-details{
+    animation: fadeIn 0.8s ease-in-out;
+}
 
 
 h1 {
