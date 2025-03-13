@@ -123,39 +123,39 @@ h1 {
 
 
 
-.click-zone {
+/*.click-zone {
     position: absolute;
     border: 1px solid red;
     opacity: 0.4;
-    cursor: pointer; /* Allow clicking */
-    pointer-events: auto; /* Enable interaction */
+    cursor: pointer; 
+    pointer-events: auto; 
 }
 
 
 
 .traps {
-    background: rgba(255, 0, 170, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 170, 0.3); 
     left: 30px;
     top: 160px;
     width: 30px;
     height: 40px;
 }
 .chest {
-    background: rgba(0, 145, 255, 0.3); /* Semi-transparent red */
+    background: rgba(0, 145, 255, 0.3);
     left: 70px;
     top: 190px;
     width: 30px;
     height: 52px;
 }
 .shoulders {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3);
     left: 30px;
     top: 200px;
     width: 35px;
     height: 38px;
 }
 .triceps {
-    background: rgba(13, 255, 0, 0.3); /* Semi-transparent red */
+    background: rgba(13, 255, 0, 0.3);
     left: 38px;
     top: 248px;
     width: 21px;
@@ -163,7 +163,7 @@ h1 {
     rotate: -20deg;
 }
 .biceps {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3);
     left: 58px;
     top: 238px;
     width: 10px;
@@ -171,28 +171,28 @@ h1 {
     rotate: -15deg;
 }
 .lats {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3); 
     left: 15px;
     top: 200px;
     width: 18px;
     height: 70px;
 }
 .abs {
-    background: rgba(0, 255, 255, 0.3); /* Semi-transparent red */
+    background: rgba(0, 255, 255, 0.3); 
     left: 75px;
     top: 244px;
     width: 30px;
     height: 80px;
 }
 .glutes {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3); 
     left: 30px;
     top: 310px;
     width: 30px;
     height: 54px;
 }
 .quads {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3);
     left: 60px;
     top: 345px;
     width: 30px;
@@ -200,7 +200,7 @@ h1 {
     rotate: 15deg;
 }
 .hamstrings {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3);
     left: 30px;
     top: 370px;
     width: 24px;
@@ -208,13 +208,34 @@ h1 {
     rotate: 0deg;
 }
 .calves {
-    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    background: rgba(255, 0, 0, 0.3);
     left: 20px;
     top: 450px;
     width: 30px;
     height: 70px;
     rotate: 0deg;
+}*/
+.click-zone {
+    position: absolute;
+    border: none; /* Remove outlines */
+    background: transparent; /* Make invisible */
+    opacity: 1; /* Ensure no transparency effect */
+    cursor: pointer; /* Allow clicking */
+    pointer-events: auto; /* Ensure interaction */
 }
+
+/* Clickable muscle areas - Invisible but still functional */
+.traps { left: 30px; top: 160px; width: 30px; height: 40px; }
+.chest { left: 70px; top: 190px; width: 30px; height: 52px; }
+.shoulders { left: 30px; top: 200px; width: 35px; height: 38px; }
+.triceps { left: 38px; top: 248px; width: 21px; height: 40px; rotate: -20deg; }
+.biceps { left: 58px; top: 238px; width: 10px; height: 40px; rotate: -15deg; }
+.lats { left: 15px; top: 200px; width: 18px; height: 70px; }
+.abs { left: 75px; top: 244px; width: 30px; height: 80px; }
+.glutes { left: 30px; top: 310px; width: 30px; height: 54px; }
+.quads { left: 60px; top: 345px; width: 30px; height: 90px; rotate: 15deg; }
+.hamstrings { left: 30px; top: 370px; width: 24px; height: 70px; rotate: 0deg; }
+.calves { left: 20px; top: 450px; width: 30px; height: 70px; rotate: 0deg; }
 
 #exercise-details {
     font-size: smaller;
