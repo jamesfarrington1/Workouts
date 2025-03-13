@@ -2,7 +2,7 @@ html {
     background: linear-gradient(to bottom, #ffffff, #522bef);
     background-size: auto 120%;
     font-family: monospace;
-    scale: 1.4;
+    scale: 1.3;
 }
 
 /* Remove duplicate .calendar-strip and fix structure */
